@@ -1,0 +1,170 @@
+.parametros {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .calificacion-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .informacion-calificacion {
+    display: flex;
+    align-items: center;
+    position: relative; /* Añadir esta línea */
+  }
+  
+  .icon {
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+    color: var(--text-color);
+  }
+  
+  .tooltip {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    top: -20px; /* Ajusta según tus necesidades */
+    left: 10px; /* Ajusta según tus necesidades */
+    z-index: 1000;
+    width: 550px; /* Ajusta para controlar el ancho máximo */
+    max-height: 120px;
+    overflow: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+  }
+  
+  
+  .label-calificacion {
+    width: 200px; /* Ajusta este valor según tus necesidades */
+    color: var(--text-color);
+  }
+  
+  .calificaciones {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-calificacion {
+    width: 50px;
+    margin: 0 10px;
+  }
+  
+  .span-calificacion {
+    width: 40px; /* Ajusta este valor según tus necesidades */
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+  }
+  
+  .buttons-calificacion {
+    display: flex;
+    width: 100%;
+    
+  }
+  .wide-input {
+    color: var(--text-color);
+  }
+  
+  .button-calificacion {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007135;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contenedorContratacion{
+    display: flex;
+    width: 100%;
+  }
+
+  .etiquetas{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 1rem;
+    margin-right: 3rem;
+  }
+
+  .requisitos{
+    display: flex;
+    width: 80%;
+    margin: 1rem;
+    justify-content: space-evenly;
+  }
+
+  .carta{
+    margin: 1rem;
+  }
+
+  .carta1{
+    margin: 1rem;
+    width: 350%;
+  }
+  
+/* Estilo para el contenedor del CardFooter */
+.card-footer-container {
+  display: flex;
+  flex-direction: row; /* Cambiamos la dirección a horizontal */
+  justify-content: center; /* Opcional: centra los elementos horizontalmente */
+  align-items: center; /* Opcional: centra los elementos verticalmente */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan si no caben en una sola línea */
+  gap: 10px; /* Espacio entre los elementos */
+  text-align: center; /* Opcional: alinea el texto en el centro horizontal */
+}
+
+/* Estilo para la carta generada por renderSelectedContent() */
+.selected-card {
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.selected-card h2 {
+  color: #000000;
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Texto en negrita */
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+.selected-card p {
+  color: #000000;
+  text-align: center; /* Centrar el texto */
+}
+
+
+.input-card {
+  width: 100%;
+}
+
+.input-card-content .btn-container {
+  display: flex;
+  justify-content: center;
+}
+.input-card-content {
+  width: 100%;
+  text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+  
+  
+  
+  
+  

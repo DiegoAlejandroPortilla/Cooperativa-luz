@@ -1,0 +1,84 @@
+/* CustomComponentForm.css */
+
+.form-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Quicksand', serif;
+}
+
+.form-line > div {
+    flex: 1;}
+
+.form-line h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.form-line ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-line li {
+    margin-bottom: 5px;
+}
+
+.form-line a {
+    text-decoration: none;
+    color: #5b6066;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.form-line a:hover {
+    color: #00b37d;
+}
+
+/*botones etc*/
+.edit-button {
+    /* Estilos para el botón "Editar campos" */
+    bottom: 10px;
+    left: 10px;
+}
+
+.password-button {
+    /* Estilos para el botón "Cambiar contraseña" */
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear los elementos a la izquierda */
+}
+
+.form-fields label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-fields input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.form-fields button {
+    padding: 10px 20px;
+    background-color: #007135;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-fields button:hover {
+    background-color: #007135;
+}

@@ -1,0 +1,103 @@
+.custom-component-postulante {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 78vh; 
+    width: 79vw;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    background: var(--background-color);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.custom-title {
+    text-align: center;
+    font-size: 0.5em;
+    font-weight: bold;
+    color: #dc1414;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.custom-divider {
+    border: 0;
+    border-top: 3px solid var(--text-color);
+    width: 100%;
+    margin: 10px 0;
+}
+
+.custom-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.custom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.custom-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.custom-item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 10px 0px;
+}
+
+.custom-icon {
+    font-size: 3.5em;
+}
+
+.custom-carousel {
+    width: 60%;
+}
+
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+}
+
+.custom-carousel .carousel .control-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CustomComponent.css */
+
+.custom-input {
+    width: 150%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Para incluir padding en el ancho total */
+}
+
+.custom-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Color de texto blanco */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor cambia a una mano al pasar por encima */
+}
+
+.custom-button:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el mouse */
+}
+

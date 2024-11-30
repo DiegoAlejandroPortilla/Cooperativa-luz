@@ -1,0 +1,157 @@
+.popupdoc-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Asegúrate de que esté por encima de otros contenidos */
+
+}
+
+.popupdoc-container {
+    position: fixed;
+    background: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Puedes ajustar el tamaño según tus necesidades */
+    width: 700px;
+    height: 450px;
+    text-align: center;
+    /* Centrar el contenido dentro de la ventana emergente */
+}
+
+.popupdoc-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.popupdoc-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    gap: 10px;
+}
+
+.popupdoc-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.popupdoc-button-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #000000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 0;
+}
+
+.candidato-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+.buttons-pop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+.candidato-info {
+  display: flex;
+}
+
+.candidato-img {
+  width:100px; /* Ajustar según el tamaño deseado */
+  height:100px; /* Ajustar según el tamaño deseado */
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.calificaciones-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto; /* Agrega una barra de desplazamiento si es necesario */
+    height: 250px; /* Ajusta esto según tus necesidades */
+    
+}
+  
+  
+  .calificaciones-section h3 {
+    font-weight: bold; /* Negrita */
+    font-size: 1.5em; /* 1.5 veces el tamaño actual */
+}
+
+.candidato-section h3 {
+    font-weight: bold; /* Negrita */
+    font-size: 1.5em; /* 1.5 veces el tamaño actual */
+}
+
+  .calificaciones-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+
+  }
+  
+  .calificaciones-parametros {
+    width: 50%; /* O puedes ajustar esto según tus necesidades */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.calificaciones-parametros p {
+    text-overflow: ellipsis; /* Trunca el texto y agrega puntos suspensivos */
+    white-space: nowrap; /* Evita que el texto se desplace a la siguiente línea */
+    overflow: hidden; /* Esconde el contenido que se desborda */
+    max-width: 100%; /* Asegura que el elemento <p> no exceda el ancho del contenedor */
+    
+}
+  
+  .calificaciones-puntajes {
+    width: 50%; /* O puedes ajustar esto según tus necesidades */
+    display: flex;
+    flex-direction: column;
+  }
+
+.puntaje-p
+{
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    border: 1px solid #ccc; /* Borde de 1px de color gris */
+    width: auto;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px; /* Espacio interno de 10px en todos los lados */
+    max-width: 100%; /* Asegura que el cuadro no se desborde de su contenedor */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background: var(--background-color);
+}
+
+
+.parametro-p{
+    background: var(--background-color);
+    border: 1px solid #ccc; /* Borde de 1px de color gris */
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px; /* Espacio interno de 10px en todos los lados */
+    max-width: 100%; /* Asegura que el cuadro no se desborde de su contenedor */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}

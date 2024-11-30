@@ -1,0 +1,47 @@
+
+/* .tabList{
+    background-color: blue;
+} */
+
+
+/* .tab{
+    background-color: red;
+} */
+
+/* .tabContent{
+    background-color: green;
+} */
+
+.tabContent:hover{
+    color: #004b23;
+}
+
+/* 
+.base{
+     background-color: aquamarine; 
+} */
+
+.panel{
+    /* background-color: blueviolet; */
+    width: 100%;
+}
+
+.tabList {
+    width: 100%;
+    overflow: scroll !important; /* Show scrollbars */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    margin: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.botonContainer{
+    position:absolute;
+    top: 0;
+    right: 20%;
+}

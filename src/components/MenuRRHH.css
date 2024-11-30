@@ -1,0 +1,70 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* align elements to the left */
+  width: auto;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 20px;
+  }
+  
+  .menu a {
+    display: flex;
+    align-items: center;
+    /* align icon and text on the center line */
+    gap: 10px;
+    /* add space between icon and text */
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 10px 0px;
+  }
+  
+  
+  .menu h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+    color: var(--text-color);
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  
+  .menu-divider {
+    border: 0;
+    border-top: 3px solid var(--text-color);
+    width: 100%;
+    margin: 10px 0;
+  
+  }
+  
+  .menu-button {
+    display: block;
+    width: 100%;
+    /* Asume que el botón debería tomar todo el ancho disponible. Ajusta como necesites. */
+    padding: 10px;
+    margin-top: 20px;
+    /* Añade espacio en la parte superior del botón. Ajusta como necesites. */
+    font-size: 1em;
+    color: #fff;
+    /* Color de texto del botón */
+    background-color: #007135;
+    /* Color de fondo del botón */
+    border: none;
+    /* Elimina cualquier borde predeterminado del botón */
+    border-radius: 5px;
+    /* Hace que las esquinas del botón sean ligeramente redondeadas. Ajusta como necesites. */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón para indicar que es interactivo */
+  }
+  
+  .menu-button:hover {
+    background-color: #014a23;
+    /* Cambia el color de fondo cuando se pasa el cursor sobre el botón */
+  }

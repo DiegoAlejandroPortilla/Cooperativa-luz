@@ -1,0 +1,197 @@
+body {
+  background-color: #f4ffe9;
+  color: black;
+  font-family: "Quattrocento", sans-serif;
+}
+
+/* Estilos para el contenedor principal */
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100vh;
+  margin: 20px;
+}
+
+.contenedor-izquierdo {
+  width: 20%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.contenedor-izquierdo button {
+  margin-bottom: 0.5em;
+  padding: 1em 2em;
+  font-size: 1em;
+}
+
+.contenedor-izquierdo .cerrar-sesion-btn {
+  margin-top: 1em;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+}
+
+.contenedor-derecho {
+  flex: 1;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.matriz {
+  background-color: #f4ffe9;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.matriz table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.matriz th,
+.matriz td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.info-contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Estilos para los títulos <h1> */
+h1 {
+  font-family: "Quattrocento", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Estilos para los select */
+select {
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  width: 100%;
+  max-width: 200px;
+  font-size: 14px;
+}
+
+/* Nuevos estilos para los labels */
+span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Nuevos estilos para ajustar el espacio entre los elementos en la tercera fila */
+.fila-3 {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: center;
+}
+
+.fila-3 .item {
+  flex: 1;
+  margin-right: 150px;
+}
+
+.fila-3 .item:last-child {
+  margin-right: 0;
+}
+
+/* Estilos para el botón "Cerrar sesión" */
+.contenedor-izquierdo .cerrar-sesion-btn {
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Centramos el botón "Cerrar sesión" horizontalmente */
+.contenedor-izquierdo .cerrar-sesion-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para los botones dentro del contenedor-izquierdo */
+.contenedor-izquierdo button {
+  margin-bottom: 10px;
+}
+
+/* Estilos para la línea horizontal <hr> */
+hr {
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Agregamos estilos para el botón "Enviar" */
+.contenedor-derecho button {
+  background-color: #ffffff;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: auto;
+  display: block;
+}
+
+/* Estilo para el botón "Enviar" al pasar el cursor */
+.contenedor-derecho button:hover {
+  background-color: #e6e6e6;
+}
+
+/* Estilos para la versión responsive */
+@media (max-width: 768px) {
+  .contenedor-principal {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contenedor-izquierdo,
+  .contenedor-derecho {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contenedor-derecho {
+    margin-top: 20px;
+  }
+
+  .info-contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  /* Alineamos el botón "Enviar" en el centro en dispositivos móviles */
+  .contenedor-derecho button {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,86 @@
+.solicitudes-container {
+    width: 100%;
+    background-color: #EEFFDC; /* Ajusta según el color de fondo deseado */
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-evenly;
+  }
+  
+  .solicitudes-info {
+    margin-bottom: 10px;
+  }
+  
+  .solicitudes-info h1 {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333; /* Ajusta según el color de texto deseado */
+    text-align: center;
+    gap: 5px;
+  }
+
+
+
+
+  .boton-ir {
+    background-color: #007135;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .boton-ir:hover {
+    background-color: #014a23;
+  }
+
+  
+  .numero-solicitudes {
+    background-color: #007135;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50%; /* Esto crea una forma circular */
+    color: #ffffff; /* Texto en blanco */
+    width: 40px; /* Ajusta según el tamaño deseado */
+    height: 40px; /* Ajusta según el tamaño deseado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px; /* Ajusta según el tamaño de fuente deseado */
+  }
+  /* CustomComponentInicio.css */
+
+/* Estilo para centrar la tabla */
+table {
+  margin: 0 auto; /* Centra la tabla */
+  border-collapse: collapse; /* Colapsa los bordes de la tabla */
+  width: 80%; /* Ancho de la tabla, ajusta según sea necesario */
+}
+
+/* Estilo para los bordes de la tabla y las celdas */
+table, th, td {
+  border: 1px solid rgb(91, 206, 62); /* Agrega un borde negro a la tabla, los encabezados y las celdas */
+}
+
+/* Estilo para los encabezados de la tabla */
+th, td {
+  padding: 8px; /* Agrega relleno a las celdas */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Opcional: estilo para las filas impares */
+tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Color de fondo para filas impares */
+}

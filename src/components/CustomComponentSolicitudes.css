@@ -1,0 +1,271 @@
+/* CustomComponentSolicitudes.css */
+.button-accepted {
+    background-color: green;
+    color: white;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-rejected {
+    background-color: red;
+    color: white;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-pending {
+    background-color: gray;
+    color: white;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #dc1414;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.custom-divider {
+    border: 0;
+    border-top: 3px solid var(--text-color);
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+.custom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.form-line > div {
+    flex: 1;
+    margin-right: 10px;
+}
+/* CustomComponentSolicitudes.css */
+
+/* ... (otros estilos) ... */
+
+.pendiente,
+.procesado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pendiente .btn-pendiente {
+    background-color: #ff69b4; /* Color rosa */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.procesado .btn-rechazado {
+    background-color: #00cc66; /* Color verde */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el icono */
+.pendiente svg,
+.procesado svg {
+    font-size: 18px;
+    color: #888;
+}
+
+/* ... (otros estilos) ... */
+
+.scrollable-table-container {
+    height: auto; /* Ajusta la altura máxima deseada */
+    overflow: auto;
+    width: 100%;
+    margin-top: 10px; /* Agrega un margen superior para separar del contenido superior */
+}
+.custom-table {
+    width: 100%; /* Cambiado a 100% para ocupar todo el espacio disponible */
+    border-collapse: collapse;
+}
+
+
+
+
+.custom-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para la primera fila de la tabla (encabezados) */
+.custom-table tr:first-child {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Estilos para las filas impares */
+.custom-table tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+/* Estilos para las filas pares */
+.custom-table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    max-width: 80%;
+}
+
+.candidate-details {
+    height: 60vh; 
+    width: 68vw;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border-color: #000000;
+}
+
+.candidate-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    font-family: 'Quicksand', serif;
+}
+
+.candidate-header h2 {
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Quicksand', serif;
+
+}
+
+.candidate-info {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Quicksand', serif;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.buttons button{
+    display: flex;
+    cursor: pointer;
+    font-size: 18px;
+    color:#000000;
+    justify-content: center;
+    background-color: transparent; /* Cambiar a fondo transparente */
+    padding: 10px 16px;
+    width: 25%;
+    margin: 15px 0;
+    font-family: 'Quicksand', serif;
+    transition: background-color 0.2s ease-in-out;
+    border: 2px solid #000000; /* Agregar un borde blanco de 2px */
+}
+
+.buttons button:hover {
+    transition: 99ms;
+    color: #000000;
+    background-color: #5ad464; /* Color verde más oscuro en hover */
+  }
+
+/* CustomComponentSolicitudes.css */
+
+/* ... Tus otros estilos ... */
+.confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.confirmation-popup {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.confirmation-popup h1{
+    margin-bottom: 10px;
+}
+
+.confirmation-popup h2{
+    margin-bottom: 10px;
+}
+
+.confirmation-popup button{
+    background-color: #000000;
+    color: white;
+    position: relative;
+    margin: 0 10px 10px 0; /* Añadir margen en la parte inferior */
+    padding: 10px 20px; /* Añadir un relleno al botón */
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease-in-out;
+    border: 2px solid #000000;
+}
+
+.confirmation-popup button:hover {
+    transition: 99ms;
+    background-color: #28a745;
+    border: 2px solid #28a745;
+}
+
+
+

@@ -1,0 +1,586 @@
+/*TIPOGRAFÍA*/
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/*PÁGINA COMPLETA*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.alert {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*PÁGINA DE INICIO*/
+.inicio {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Capa oscura con transparencia */
+  z-index: 0;
+}
+
+.inicio .recuadro-blanco-titulo {
+  position: absolute;
+  top: 50%; /* Centra verticalmente el recuadro en la mitad de la pantalla */
+  left: 50%; /* Centra horizontalmente el recuadro en la mitad de la pantalla */
+  transform: translate(-50%, -50%); /* Centra exactamente el recuadro en la pantalla */
+  width: 100%; /* Ajusta el ancho del recuadro */
+  max-width: 500px; /* Establece un ancho máximo */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio .recuadro-blanco-titulo h1 {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Quicksand', serif; /* Aplica la fuente Quattrocento al h1 */
+}
+
+.inicio .recuadro-blanco-titulo h2 {
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Quattrocento', serif; /* Aplica la fuente Quattrocento al h2 */
+}
+
+.inicio .recuadro-blanco-titulo button {
+  cursor: pointer;
+  font-size: 18px;
+  color:#ffffff;
+  background-color: transparent; /* Cambiar a fondo transparente */
+  padding: 10px 16px;
+  width: 35%;
+  margin: 15px 0;
+  font-family: 'Quicksand', serif;
+  transition: background-color 0.2s ease-in-out;
+  border: 2px solid #ffffff; /* Agregar un borde blanco de 2px */
+}
+
+.inicio button:hover {
+  transition: 99ms;
+  color: #000000;
+  background-color: #ffffff; /* Color verde más oscuro en hover */
+}
+
+/*PÁGINA LOGIN Y REGISTRO 1*/
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-form {
+  flex: 1; /* Esto hará que el formulario ocupe el 50% del ancho del contenedor */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Puedes ajustar el color de fondo según tus preferencias */
+}
+
+.login-image {
+  flex: 1; /* Esto hará que la imagen ocupe el 50% restante del ancho del contenedor */
+  background-image: url("../assets/cropped-Logo-Copp-LDV-footer-300x260-1.png"); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+  background-size: auto 90%; /* Ajusta el tamaño de la imagen al 100% de la altura del contenedor */
+  background-position: center;
+}
+
+/* Estilos para los elementos del formulario */
+.login-form h1 {
+  margin-bottom: 40px;
+  color: #000000;
+  font-size: 50px;
+  font-family: 'Quicksand', serif;
+  font-weight: bold;
+}
+
+.login-form h2 {
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Poppins', serif;
+  text-align: center;
+}
+
+.login-form label {
+  display: block;
+  text-align: left;
+}
+
+.login-form input, .login-form select {
+  display: block;
+  width: 50vh;
+  margin: 10px 0;
+  padding: 8px 12px;
+  border: 3px solid #000000;
+  border-radius: 25px;
+  color: #020202;
+  font-size: 18px;
+  background-color: transparent;
+  padding: 10px 16px;
+  font-family: 'Quicksand', serif;
+}
+
+.login-form button {
+  display: block;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
+  padding: 10px 16px;
+  width: 35%;
+  margin: 40px auto; /* Centra horizontalmente con 'auto' en los márgenes izquierdo y derecho */
+  font-family: 'Quicksand', serif;
+  color: #000000;
+  transition: background-color 0.2s ease-in-out;
+  border: 2px solid #000000;
+}
+
+/* Estilo para el efecto de hover del botón */
+.login-form button:hover {
+  transition: 99ms;
+  background-color: #28a745; /* Color verde más oscuro en hover */
+}
+
+.login-form p {
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Poppins', serif;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.login-form h3 {
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Poppins', serif;
+  text-align: center;
+}
+
+.login-form h4 {
+  color: #ff0000;
+  font-size: 15px;
+  font-family: 'Poppins', serif;
+  text-align: center;
+}
+
+.register-container {
+  display: flex;
+  align-items: center;
+}
+
+.register-container p {
+  margin: 0; /* Eliminar márgenes por defecto del párrafo */
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.captcha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/*PÁGINA FORMULARIO*/
+.form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+}
+
+.form-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  width: 500px; /* Cambia este valor al ancho que desees */
+}
+
+.form-box input,
+.form-box select {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  margin: 10px 0;
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  border: 3px solid #000000;
+  border-radius: 25px;
+  color: #000000;
+  font-size: 18px;
+  background-color: transparent;
+  font-family: 'Quicksand', serif;
+}
+
+
+.form-box button {
+  display: block;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
+  padding: 10px 16px;
+  width: 35%;
+  margin: 40px auto; /* Centra horizontalmente con 'auto' en los márgenes izquierdo y derecho */
+  font-family: 'Quicksand', serif;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+/* Estilo para el efecto de hover del botón */
+.form-box button:hover {
+  transition: 99ms;
+  background-color: #28a745; /* Color verde más oscuro en hover */
+}
+
+
+/* Estilos para los elementos del formulario */
+.form-box h1 {
+  margin-bottom: 40px;
+  color: #000000;
+  font-size: 50px;
+  font-family: 'Quicksand', serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-box h2 {
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Poppins', serif;
+  text-align: center;
+}
+
+.form-box h4 {
+  color: #ff0000;
+  font-size: 15px;
+  font-family: 'Poppins', serif;
+  text-align: center;
+}
+
+/*PÁGINA PLATAFORMA*/
+/*PÁGINA INICIO POSTULANTE */
+
+.parent-container {
+  min-height: 90%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plataforma-container {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "top-item top-item"  
+    "left-item right-item" auto /
+    20%    auto;
+}
+
+.plataforma-container h1 {
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.top-item {
+  grid-area: top-item;
+  background-color: var(--background-color);
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.left-item {
+  grid-area: left-item;
+}
+
+.right-item {
+  grid-area: right-item;
+  overflow: auto;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.background-video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Cambia el valor alfa (0.5) para ajustar la transparencia */
+  z-index: 1; /* Coloca el fondo semi-transparente encima del video */
+}
+
+.seccion-informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background-color: #007BFF;
+}
+
+.seccion-informacion h1 {
+  font-size: 30px;
+  color: #1d7524;
+  background-color: #fff;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.seccion-informacion button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  width: 100%;
+}
+
+.seccion-informacion button:hover {
+  transition: 99ms;
+  background-color: #28a745; 
+}
+
+.estados {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #000000;
+  width: 580px;
+}
+
+.estados p {
+  margin: 0 10px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/*PÁGINA INFORMACIÓN DEL POSTULANTE*/
+.postulante-container {
+  display: flex;
+  flex-direction: column; /* Apilar elementos verticalmente */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-image: url('../assets/form3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.postulante-container button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  width: 20vh;
+}
+
+.postulante-container button:hover {
+  transition: 99ms;
+  background-color: #28a745; 
+}
+
+.document-table {
+  width: 100vh;
+  height: 50vh;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.document-table th,
+.document-table td {
+  color: #000000;
+  padding: 10px;
+  border: 1px solid #c5b5b5;
+  background-color: rgb(225, 238, 237);
+  color: #000000;
+}
+
+.document-table th {
+  background-color: #000000;
+  color: #fff;
+}
+
+.document-table td input[type='file'] {
+  margin-top: 5px;
+}
+
+.btn-aceptar {
+  margin-top: 15px;
+  background-color: #000000;
+  position: relative;
+}
+
+.btn-aceptar:hover {
+  background-color: #28a745;
+}
+
+.btn-regresar {
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: #000000;
+  position: relative;
+}
+
+.btn-regresar:hover {
+  background-color: #28a745;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Coloca el video detrás del contenido */
+  opacity: 0.5; /* Transparencia del video */
+}
+
+/*PÁGINA SELECCIONAR POSTULACIÓN*/
+.process-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-image: url('../assets/form3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.formulario {
+  background-color: #fff;
+  color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  width: 20vh;
+}
+
+.formulario select {
+  display: block;
+  width: 30%;
+  padding: 5px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.proceso-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Los elementos se distribuirán horizontalmente */
+  width: 70%; /* Ajusta el ancho del contenedor según tus necesidades */
+  margin: 10px 0; /* Agregamos un margen para separar los elementos */
+}
+
+.proceso-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.proceso-select {
+  /* Agrega aquí los estilos deseados para el combo box */
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: auto; /* Alinea a la derecha */
+}
+
+.tabla {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 10%;
+  border-collapse: collapse;
+}
+
+.tabla th, .tabla td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+
+
+/*AGREGAR NUEVOS ESTILOS*/
+

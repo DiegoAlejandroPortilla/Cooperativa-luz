@@ -1,0 +1,97 @@
+.top-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between
+
+}
+.title-top-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mode-toggle {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: block;
+    background-color: #007135;
+    /* Color de fondo del botón */
+    border: none;
+    /* Elimina cualquier borde predeterminado del botón */
+    border-radius: 5px;
+    /* Hace que las esquinas del botón sean ligeramente redondeadas. Ajusta como necesites. */
+}
+
+.mode-toggle:hover {
+    background-color: var(--toggle-button-background-hover, #45a049);
+}
+
+.dark-mode {
+    --background-color: #111111;
+    --text-color: white;
+}
+
+
+.label-darkmode {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.label-darkmode:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-darkmode {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.input-darkmode:checked+.label-darkmode{
+    background: #242424;
+}
+
+.input-darkmode:checked+.label-darkmode:after {
+    left: 49px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.label-darkmode ,
+.label-darkmode:after {
+    transition: 0.3s
+}
+
+label:active:after {
+    width: 26px;
+}
+
+.input-darkmode:checked+.label-darkmode+.dark-mode {
+    background: var(--background-color);
+}

@@ -1,0 +1,52 @@
+
+.documents-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.documents-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+.form-line-container{
+    width: 100%;
+    display: flex;
+}
+
+.form-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Quicksand', serif;
+}
+
+.form-line > div {
+    flex: 1;}
+
+.form-line h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.form-line ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-line li {
+    margin-bottom: 5px;
+}
+
+.form-line a {
+    text-decoration: none;
+    color: #5b6066;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.form-line a:hover {
+    color: #00b37d;
+}
